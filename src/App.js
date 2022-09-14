@@ -102,7 +102,7 @@ function App() {
 
           />
           <RaM
-              id = {67}
+              id = {6}
               name = {'Abadango Cluster Princess'}
               status = {'Alive'}
               species = {'Alien'}
