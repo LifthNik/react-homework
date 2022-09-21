@@ -7,7 +7,11 @@ function App() {
 
     <div className="App">
 
-<Users/>
+        <h2>Part 1. Users, User info.</h2>
+        <Users/>
+
+
+        <h2>Part 2. SpaceX API</h2>
 
 
     </div>
