@@ -8,8 +8,4 @@ let getUsersAxios = () => {
     return axiosInstance.get()
 };
 
-let getUserAxios = (id) => {
-    return axiosInstance.get('/' + id)
-};
-
-export {getUsersAxios, getUserAxios};
+export {getUsersAxios};
