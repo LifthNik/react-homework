@@ -7,8 +7,7 @@ export default function User (props) {
 
             <button onClick={ () => {
                 lift(user)
-            }
-            }>More Info</button>
+            }}>More Info</button>
 
 
 

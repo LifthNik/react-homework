@@ -40,3 +40,27 @@ h4{
     border: 1px solid;
     padding: 5px;
 }
+
+.rockets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.rocketCard{
+    width: 19%;
+
+    background: lightblue;
+    border: 1px solid black;
+    margin: 3px;
+
+    text-align: -webkit-center;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}

@@ -1,6 +1,6 @@
 import './App.css';
 import Users from "./components/UserPart/Users";
-import User from "./components/UserPart/User";
+import Rockets from "./components/ApiSpaceX/launches";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
 
 
         <h2>Part 2. SpaceX API</h2>
-
+        <Rockets/>
 
     </div>
 
