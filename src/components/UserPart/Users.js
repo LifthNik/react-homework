@@ -1,6 +1,6 @@
 import User from "./User";
 import {useState, useEffect} from "react";
-import {getUsersAxios} from "../services/users.api.axios.service";
+import {getUsersAxios} from "../../services/users.api.axios.service";
 import {Info} from "./user.info";
 
 export default function Users() {
