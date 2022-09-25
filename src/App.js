@@ -2,7 +2,7 @@
 import './App.css';
 
 import Users from "./components/Users/Users";
-import Comments from "./components/Comments/comments";
+import Comments from "./components/Comments/Comments";
 
 function App() {
 

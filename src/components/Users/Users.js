@@ -11,20 +11,12 @@ export default function Users() {
             usersGet.getUsers().then(({data}) => setUsers(data))
         }, [])
 
-        return (<div>
+        return (<div className='listOfUsers'>
 
                 {
                     users.map(user =>
                         <User
                             key={user.id}
                             user={user}
-                        />)
-                }
-
-            </div>
-        )
-
-}
-
-
-export {Users};
+                        />)}
+                </div>)}

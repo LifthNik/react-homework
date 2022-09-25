@@ -1,7 +1,7 @@
 export * from './Users/User'
-export * from './Users/userForm'
+export * from './Users/UserForm'
 export * from './Users/Users'
 
-export * from './Comments/comments'
-export * from './Comments/commentForm'
-export * from './Comments/comment'
+export * from './Comments/Comments'
+export * from './Comments/CommentForm'
+export * from './Comments/Comment'
