@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 
 import {usersGet} from "../../services";
 import User from "./User";
+import UserForm from "./UserForm";
 
 export default function Users() {
 
@@ -12,6 +13,8 @@ export default function Users() {
         }, [])
 
         return (<div className='listOfUsers'>
+
+                <div className='userForm'><UserForm setUsers={setUsers}/></div>
 
                 {
                     users.map(user =>
