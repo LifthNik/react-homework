@@ -8,8 +8,8 @@ let userUrl = {
 
 let axiosUsers = axios.create({mainUrl});
 
-let usersGet = () => {
-    getUsers:axiosUsers.get(userUrl.users)
+let usersGet = {
+    getUsers: axiosUsers.get(userUrl.users)
 }
 
 export {usersGet};
