@@ -1,12 +1,12 @@
-export default function Users(props) {
-    let {user} = props;
+export default function User ({user,getUserId}) {
+
 
     return (
         <div className= 'users'>
 
             <h3>{user.id}. {user.name}</h3>
 
-            <button>Posts</button>
+            <button onClick={ () => getUserId(user.id)}>Show Posts</button>
 
         </div>
     )

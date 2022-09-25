@@ -1,24 +1,29 @@
 import {useEffect, useState} from "react";
-import {UsersAxios} from "../../servises/users.axios.service";
-import Users from "./User";
 
-export default function ShowUsers () {
+import {userService} from "../../servises/users.axios.service";
+import User from "./User";
+
+
+export default function Users ({getUserId}) {
+
     let [users,setUsers] = useState([]);
-    let [user, setUser] = useState([]);
 
 useEffect(() => {
-    UsersAxios().then(value => setUsers(value.data))
+    userService.getUsers().then(({data}) => setUsers(data))
 }, [])
 
-    
     return (
         <div className='usersBox'>
-            {users.map((user, index) =>
-                (<Users
-                key = {index}
-                user = {user}
-                />
-                ))}
+            {
+                users.map
+                (user =>
+                    <User
+                    key = {user.id}
+                    user = {user}
+                    getUserId = {getUserId}
+                    />
+                )
+            }
         </div>
 
     )
