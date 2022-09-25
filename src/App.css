@@ -1,0 +1,10 @@
+.App {
+    display: flex;
+}
+.postBox{
+    border: 1px solid;
+    margin: 10px;
+}
+.post{
+    margin: 2px;
+}
