@@ -2,6 +2,7 @@
 import './App.css';
 
 import Users from "./components/Users/Users";
+import Comments from "./components/Comments/comments";
 
 function App() {
 
@@ -9,7 +10,10 @@ function App() {
 
     <div className="App">
 
-    <Users/>
+
+      <Users/>
+
+      <Comments/>
 
     </div>
   );
