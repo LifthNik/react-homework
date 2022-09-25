@@ -1,6 +1,5 @@
 import './App.css';
-
-import {useState} from "@types/react";
+import {useState} from "react";
 
 import ShowPosts from "./components/post/Posts";
 import Users from "./components/user/Users";
