@@ -1,3 +1,3 @@
-export * from './User'
-export * from './userForm'
-export * from './Users'
+export * from './Users/User'
+export * from './Users/userForm'
+export * from './Users/Users'
