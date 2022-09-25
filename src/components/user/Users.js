@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useEffect,useState} from "react";
 
 import {userService} from "../../servises/users.axios.service";
 import User from "./User";
