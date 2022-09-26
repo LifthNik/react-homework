@@ -5,7 +5,8 @@ export default function Post ({post}) {
         <div className='post'>
 
 
-        <h2>{post.id}. {post.title} </h2>
+        <h3>{post.id}. {post.title} </h3>
+            <h5>{post.body}</h5>
 
         </div>
     )};
