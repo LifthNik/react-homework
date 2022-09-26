@@ -22,6 +22,7 @@ export default function UserForm ({setUsers}) {
                 <input type="text" {...register('email')}/>
 
                 <button>ADD</button>
+
             </form>
 
         </div>
