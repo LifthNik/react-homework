@@ -11,9 +11,11 @@ export function CommentForm ({setComments}) {
         }
     });
 
+
     let addComment = (newComment) => {
         commentsGet.newComment(newComment).then(({data}) => setComments(comment => [...comment,data]))
     }
+
 
     return (<div>
 

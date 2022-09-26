@@ -8,9 +8,11 @@ export default function Comments () {
 
     let [comments, setComments] = useState([]);
 
+
     useEffect(() => {
         commentsGet.getComments().then(({data}) => setComments(data))
     }, [])
+
 
     return (<div className='listOfComments'>
 
