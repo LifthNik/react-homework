@@ -4,11 +4,11 @@ import {usersGet} from "../../services";
 export default function UserForm ({setUsers}) {
 
     let {register, handleSubmit} = useForm({
+
         defaultValues: {
             name: 'name',
             email: 'email'
         },
-        mode: 'all'
     });
 
     let addUser = (newUser) => {
@@ -17,6 +17,7 @@ export default function UserForm ({setUsers}) {
     return (<div>
 
             <form onSubmit={handleSubmit(addUser)}>
+
                 <input type="text" {...register('name')}/>
                 <input type="text" {...register('email')}/>
 
