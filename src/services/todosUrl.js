@@ -1,7 +1,7 @@
-import {baseUrl,urls} from "../config/urls";
+import {baseUrl,urls} from "../config";
 
 let getTodos = () => {
-    fetch(baseUrl.todos)
+    return fetch(`${baseUrl}${urls.todos}`)
         .then(items => items.json())
 };
 
