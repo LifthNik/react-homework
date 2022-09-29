@@ -12,7 +12,7 @@ function App() {
 
 
 <Routes>
-    <Route part={'/'} element={<Menu/>}>
+    <Route part={''} element={<Menu/>}>
         <Route path={'todos'} element={<Todos/>}/>
         <Route path={'albums'} element={<Albums/>}/>
         <Route path={'Comments'} element={<Comments/>}/>
