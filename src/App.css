@@ -1,9 +1,11 @@
-.App {
+.mainWindow {
     display: flex;
 }
 .postBox{
     border: 1px solid;
     margin: 10px;
+
+    width: 75%;
 }
 .post{
     margin: 5px;

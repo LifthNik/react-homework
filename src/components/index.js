@@ -15,6 +15,7 @@ export default function Constructor() {
         <div className="mainWindow">
 
             <Users getUserId={getUserId}/>
+
             <ShowPosts posts={posts}/>
 
         </div>
