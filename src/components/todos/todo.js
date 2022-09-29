@@ -1,9 +1,9 @@
 let Todo = ({todo}) => {
 
     return (
-        <div className='Todo'>
-            {todo.id} - {todo.title
-        }</div>
+        <div className='Todo' id={todo.id}>
+            {todo.id} - {todo.title}
+        </div>
     );
 };
 

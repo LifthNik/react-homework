@@ -1,6 +1,7 @@
 import {baseUrl, urls} from "../config";
 
-let getPosts = () => {
+
+let getPosts = (id) => {
     return fetch(`${baseUrl}${urls.posts}`)
         .then(items => items.json())
                 };

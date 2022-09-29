@@ -1,3 +1,5 @@
+export * from "src/components/mainPage/menu"
+
 export * from "todos/todo"
 export * from "todos/todos"
 
