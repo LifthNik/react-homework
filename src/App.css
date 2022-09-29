@@ -11,9 +11,12 @@ p{
   text-align: justify;
 }
 
+.simpsonFam{
+  display: flex;
+}
+
 .simpsonCard {
   margin: 5px;
-  width: 19%;
 
   background: #c28204;
   border: 1px solid black;
