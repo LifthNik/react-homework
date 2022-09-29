@@ -12,12 +12,10 @@ export default function Todos () {
     }, [])
 
     return (
-        <div>
+        <div className='Todos'>
             {
                 todos.map(todo => <Todo key={todo.id} todo ={todo}/>)
             }
         </div>
     );
 }
-
-export {Todos};

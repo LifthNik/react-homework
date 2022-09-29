@@ -4,7 +4,7 @@ let urls = {
     todos: '/todos',
     albums: '/albums',
     comments: '/comments',
-    posts: 'posts'
+    posts: '/posts'
 }
 
 export {baseUrl, urls}

@@ -1,7 +1,9 @@
 let Todo = ({todo}) => {
 
     return (
-        <div>{todo.id} - {todo.title}</div>
+        <div className='Todo'>
+            {todo.id} - {todo.title
+        }</div>
     );
 };
 
