@@ -1,14 +1,17 @@
 import Post from "./Post";
 
-export default function ShowPosts ({posts}) {
+export default function ShowPosts({posts}) {
 
-
-    return(
+    return (
         <div className='postBox'>
             {
-                posts.map(post => <Post key={post.id} post ={post}/>)
+                posts.map(post =>
+                    <Post
+                        key={post.id}
+                        post={post}
+                    />)
             }
 
         </div>
     )
-}
+};
