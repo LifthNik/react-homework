@@ -1,6 +1,6 @@
 import './App.css';
 
-import Todos from "./components/todos]/todos";
+import Todos from "./components/todos/todos";
 
 function App() {
   return (
