@@ -1,6 +1,24 @@
-.Menu{
+.MainPage{
     display: flex;
-    justify-content: space-around;
+}
+.links{
+    display: flex;
+    flex-direction: column;
 
-    margin-right: 30px;
+    margin-right: 100px ;
+}
+
+a{
+    display: flex;
+
+    width: 100px;
+    height: 100px;
+
+    background: lightblue;
+    border: 1px solid black;
+    margin: 5px;
+
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }

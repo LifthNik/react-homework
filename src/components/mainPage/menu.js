@@ -1,10 +1,16 @@
-import {Outlet} from "react-router-dom"
+import {Link, Outlet} from "react-router-dom"
+import {urls} from "../../config";
 
-export default function Menu() {
+export default function Main() {
 
-    return (<div className='Menu'>
+    return (<div className='MainPage'>
 
-            <h3>HELLO</h3>
+            <div className="links">
+                <Link to={'/'}>Home Page</Link>
+                <Link to={urls.todos}>Todos</Link>
+                <Link to={urls.albums}>Albums</Link>
+                <Link to={urls.comments}>Comments</Link>
+            </div>
             <Outlet/>
 
         </div>
