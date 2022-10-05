@@ -1,20 +1,21 @@
-import {useEffect, useState} from "react";
+import {useParams} from "react-router-dom";
+import {useState, useEffect} from "react";
 
 import {getPosts} from "../../services/postsUrl";
 import {Post} from "./post";
 
 export default function Posts () {
 
-    let [posts, setPosts] = useState([])
+    let {postId} = useParams();
+
+    let [post, setPost] = useState({});
 
     useEffect(() => {
-        getPosts().then(value => setPosts(value))
-    }, [])
+        getPosts(postId).then(value => setPost(value))
+    }, [postId]);
 
     return (<div className='Posts'>
-            {
-                posts.map(post => <Post key = {post.id} post ={post}/>)
-            }
+            {<Post post = {post} postId ={postId}/>}
         </div>
     );
 }

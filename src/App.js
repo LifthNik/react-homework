@@ -1,10 +1,11 @@
 import './App.css';
-import {Route, Routes} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 
 import Main from "./components/mainPage/menu";
-import Todos from "./components/todos/todos";
-import Albums from "./components/albums/albums";
-import Comments from "./components/comments/comments";
+import Posts from "./components/posts/posts";
+import AlbumPage from "./pages/AlbumPage";
+import TodoPage from "./pages/TodoPage";
+import CommentPAge from "./pages/CommentPAge";
 
 
 
@@ -16,9 +17,15 @@ return (
 
 <Routes>
     <Route path={'/'} element={<Main/>}>
-        <Route path={'todos'} element={<Todos/>}/>
-        <Route path={'albums'} element={<Albums/>}/>
-        <Route path={'Comments'} element={<Comments/>}/>
+        <Route path={'todos'} element={<TodoPage/>}/>
+
+        <Route path={'albums'} element={<AlbumPage/>}/>
+
+        <Route path={'comments'} element={<CommentPAge/>}>
+            <Route path={':postId'} element={<Posts/>}/>
+
+        </Route>
+
     </Route>
 </Routes>
 
