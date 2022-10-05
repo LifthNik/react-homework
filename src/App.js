@@ -2,10 +2,10 @@ import './App.css';
 import {Routes, Route} from 'react-router-dom'
 
 import Main from "./components/mainPage/menu";
-import Posts from "./components/posts/posts";
 import AlbumPage from "./pages/AlbumPage";
 import TodoPage from "./pages/TodoPage";
 import CommentPAge from "./pages/CommentPAge";
+import Posts from "./components/posts/posts";
 
 
 
