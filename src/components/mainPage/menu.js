@@ -6,10 +6,10 @@ export default function Main() {
     return (<div className='MainPage'>
 
             <div className="links">
-                <Link to={'/'}>Home Page</Link>
-                <Link to={urls.todos}>Todos</Link>
-                <Link to={urls.albums}>Albums</Link>
-                <Link to={urls.comments}>Comments</Link>
+                <Link to={'/'} className='menuLink'>Home Page</Link>
+                <Link to={urls.todos} className='menuLink'>Todos</Link>
+                <Link to={urls.albums} className='menuLink'>Albums</Link>
+                <Link to={urls.comments} className='menuLink'>Comments</Link>
             </div>
             <Outlet/>
 
