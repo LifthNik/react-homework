@@ -8,14 +8,14 @@ export default function Posts () {
 
     let {postId} = useParams();
 
-    let [post, setPost] = useState({});
+    let [posts, setPosts] = useState({});
 
     useEffect(() => {
-        getPosts(postId).then(value => setPost(value))
+        getPosts(postId).then(value => setPosts(value))
     }, [postId]);
 
     return (<div className='Posts'>
-            {<Post post = {post} postId ={postId}/>}
+            {<Post post = {posts} postId ={postId}/>}
         </div>
     );
 }
