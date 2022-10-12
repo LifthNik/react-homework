@@ -1,16 +1,19 @@
 import './App.css';
-import CatDogPage from "./pages/CatDogPage";
 
-function App() {
-
-  return (
-
-    <div className="App">
-
-    <CatDogPage/>
-
-    </div>
-  );
-}
+import Cats from "./components/cats/Cats";
+import Dogs from "./components/dogs/Dogs";
 
 export default App;
+function App() {
+
+    return (<div className='App'>
+
+            <Cats/>
+
+            <Dogs/>
+
+    </div>
+
+
+);
+}
