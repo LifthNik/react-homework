@@ -3,7 +3,7 @@ import {useEffect} from "react";
 
 import {getUsers} from "../../services";
 import {GET_USERS} from "../../redux/actions/actions";
-import User from "../user/user";
+import User from "./user";
 
 export default function Users () {
 
@@ -12,7 +12,7 @@ export default function Users () {
     let dispatch = useDispatch();
 
     useEffect(() => {
-        getUsers.then(data => dispatch({type: GET_USERS, payload: data}))
+        getUsers().then(data => dispatch({type: GET_USERS, payload: data}))
     }, [])
 
 
