@@ -2,12 +2,25 @@ import {Link} from "react-router-dom";
 
 export default function Menu () {
 
-    return (<div className = 'Menu'>
+    return (
+        <div className='Menu'>
 
-            <div><Link to={'/'}/>Menu</div>
-            <div><Link to={'users'}/>Users</div>
-            <div><Link to={'posts'}/>Posts</div>
-            <div><Link to={'comments'}/>Comments</div>
+            <div className='linkButton'>
+                <Link to={'/'}>Menu</Link>
+            </div>
+
+            <div className='linkButton'>
+                <Link to={'users'}>Users</Link>
+            </div>
+
+            <div className='linkButton'>
+                <Link to={'posts'}>Posts</Link>
+            </div>
+
+            <div className='linkButton'>
+                <Link to={'comments'}>Comments</Link>
+            </div>
+
         </div>
     );
 };
