@@ -5,3 +5,16 @@
 .menu{
   display: flex;
 }
+
+.linkButton {
+
+  margin: 5px;
+  border: 1px solid;
+
+  width: 100px;
+  height: 100px;
+
+  background: skyblue;
+
+  text-align: center;
+}
