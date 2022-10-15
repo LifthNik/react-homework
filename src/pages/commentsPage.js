@@ -1,6 +1,6 @@
 import Comments from "../components/comments/comments";
 
-export default function commentsPage () {
+export default function CommentsPage () {
 
     return (<div className = 'commentsPage'>
 
@@ -10,4 +10,4 @@ export default function commentsPage () {
     );
 };
 
-export {commentsPage}
+export {CommentsPage}

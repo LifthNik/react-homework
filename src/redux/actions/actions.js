@@ -1,0 +1,11 @@
+let GET_USERS = 'GET_USERS'
+let GET_USER = 'GET_USER'
+let GET_COMMENTS = 'GET_COMMENTS'
+let GET_POSTS = 'GET_POSTS'
+
+export {
+    GET_USER,
+    GET_USERS,
+    GET_POSTS,
+    GET_COMMENTS
+}

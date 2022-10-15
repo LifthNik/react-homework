@@ -1,63 +1,28 @@
-import './App.css';
+import {Route, Routes} from "react-router-dom";
 
-import {useDispatch, useSelector} from "react-redux";
-import {useEffect} from "react";
+import MainPage from "./pages/mainPage";
 
-import {getComments, getPosts, getUsers} from "./services";
+import UsersPage from "./pages/usersPage";
+import UserPage from "./pages/userPage";
+import PostsPage from "./pages/postsPage";
+import CommentsPage from "./pages/commentsPage";
 
-function App() {
+let App = () => {
 
-  let users = useSelector(state => state.userReducer);
-  let posts = useSelector(state => state.postReducer);
-  let comments = useSelector(state => state.commentReducer);
+    return (
 
-  console.log(users);
-  console.log(posts);
-  console.log(comments);
+        <Routes>
+          <Route path={'/'} element={<MainPage/>}>
+            <Route path={'users'} element={<UsersPage/>}/>
+            <Route path={'user/:id'} element={<UserPage/>}/>
+            <Route path={'posts'} element={<PostsPage/>}/>
+            <Route path={'comments'} element={<CommentsPage/>}/>
 
-  let dispatch = useDispatch();
-
-
-  useEffect(() => {
-
-    getUsers().then(value => {
-
-      dispatch({type: 'LOAD_USERS', payload: value});
-
-    });
+          </Route>
 
 
-  }, []);
-
-
-  useEffect(() => {
-
-    getPosts().then(value => {
-
-      dispatch({type: 'LOAD_POSTS', payload: value});
-
-    });
-
-
-  }, []);
-
-
-  useEffect(() => {
-
-    getComments().then(value => {
-
-      dispatch({type: 'LOAD_COMMENTS', payload: value});
-
-    });
-
-
-  }, []);
-
-  return (
-    <div className="App">
-
-    </div>
-  );
+          </Routes>
+    )
 }
 
-export default App;
+export {App};
