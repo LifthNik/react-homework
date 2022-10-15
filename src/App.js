@@ -4,9 +4,9 @@ import './App.css';
 
 import MainPage from "./pages/mainPage";
 import UsersPage from "./pages/usersPage";
+import OneUserPage from "./pages/oneUserPage";
 import PostsPage from "./pages/postsPage";
 import CommentsPage from "./pages/commentsPage";
-import OneUserPage from "./pages/oneUserPage";
 
 let App = () => {
 

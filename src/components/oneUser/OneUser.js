@@ -4,23 +4,26 @@ import {useEffect} from "react";
 
 
 import {GET_USER} from "../../redux/actions/actions";
-import {UserDetails} from "../userDetails/userDetails";
+import {UserDetails} from "../userDetails/UserDetails";
 
 let OneUser = () => {
 
-    let {user} = useSelector(state => state.UsersReducer);
+    let user = useSelector(state => state.UsersReducer);
 
     let dispatch = useDispatch();
 
     let {id} = useParams();
 
     useEffect(() => {
+
         dispatch({type: GET_USER, payload: +id})
-    }, [id])
+
+    }, [id]);
+
 
     return (<div className = 'oneUser'>
 
-            {user && (<UserDetails user={user}/>)}
+            {user.user && (<UserDetails user={user.user}/>)}
 
         </div>
     );

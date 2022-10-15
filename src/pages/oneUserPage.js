@@ -1,4 +1,4 @@
-import {OneUser} from "../components/oneUser/oneUser";
+import {OneUser} from "../components/oneUser/OneUser";
 
 
 export default function OneUserPage () {
