@@ -8,7 +8,7 @@ let UsersReducer = (state = {users: [], user: null}, action) => {
             return {...state, users: payload}
 
         case GET_USER:
-            let user = state.users.find(user => user.id === payload);
+            let user = state.users.filter(user => user.id === payload)[0];
             return {...state, user};
 
         default:
