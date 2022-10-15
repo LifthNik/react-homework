@@ -5,20 +5,20 @@ export default function Menu () {
     return (
         <div className='menu'>
 
-            <div className='linkButton'>
-                <Link to={'/'}>Menu</Link>
+            <div className='linkDiv'>
+                <Link to={'/'} className='linkButton'>Menu</Link>
             </div>
 
-            <div className='linkButton'>
-                <Link to={'users'}>Users</Link>
+            <div className='linkDiv'>
+                <Link to={'users'} className='linkButton'>Users</Link>
             </div>
 
-            <div className='linkButton'>
-                <Link to={'posts'}>Posts</Link>
+            <div className='linkDiv'>
+                <Link to={'posts'} className='linkButton'>Posts</Link>
             </div>
 
-            <div className='linkButton'>
-                <Link to={'comments'}>Comments</Link>
+            <div className='linkDiv'>
+                <Link to={'comments'} className='linkButton'>Comments</Link>
             </div>
 
         </div>

@@ -1,7 +1,7 @@
-export default function User () {
+export default function User ({user}) {
 
     return (<div className = 'User'>
-
+            {user.name} -- {user.email}
         </div>
     );
 };
