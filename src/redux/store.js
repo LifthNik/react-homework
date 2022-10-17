@@ -12,3 +12,4 @@ let setupStore = () => configureStore({
 export {
     setupStore
 }
+

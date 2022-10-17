@@ -1,4 +1,5 @@
 export * from './Head/Head'
+export * from './Head/PostsHead'
 export * from './Users/User'
 export * from './Users/Users'
 export * from './Posts/Post'
