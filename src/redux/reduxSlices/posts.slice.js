@@ -18,7 +18,8 @@ let postSlice = createSlice({
     }
 });
 
-let {reducer: postReducer, actions:{
+let {reducer: postReducer,
+    actions:{
     getAllPosts,
     setOnePost}} = postSlice;
 
