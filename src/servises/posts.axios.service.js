@@ -1,11 +1,11 @@
 import axios from "axios";
 
-import {mainUrl} from "./axios.service.urls";
+import {mainURL} from "./axios.service.urls";
 
-let axiosInstancePosts = axios.create({mainUrl});
+let axiosInstancePosts = axios.create({mainURL});
 
 let postService = {
-    getPosts: (userId) => axiosInstancePosts.get(`${mainUrl}/posts/?userId=${userId}`)
+    getPosts: (userId) => axiosInstancePosts.get(`${mainURL}/posts/?userId=${userId}`)
 }
 
 export  {postService}

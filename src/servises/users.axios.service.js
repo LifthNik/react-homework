@@ -1,11 +1,11 @@
 import axios from "axios";
 
-import {mainUrl} from "./axios.service.urls";
+import {mainURL} from "./axios.service.urls";
 
-let axiosInstanceUsers = axios.create({mainUrl});
+let axiosInstanceUsers = axios.create({mainURL});
 
 let userService = {
-    getUsers: () => axiosInstanceUsers.get(`${mainUrl}/users`)
+    getUsers: () => axiosInstanceUsers.get(`${mainURL}/users`)
 }
 
 export {userService};

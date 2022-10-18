@@ -1,5 +1,5 @@
-let mainUrl = 'https://jsonplaceholder.typicode.com';
+let mainURL = 'https://jsonplaceholder.typicode.com';
 
 
 
-export {mainUrl}
+export {mainURL}
