@@ -3,12 +3,22 @@
   margin-left: 10px;
 }
 
-.UserHead{
+.UserHead {
   margin: 10px;
   border: 1px solid;
 
   height: 100px;
   width: 100px;
+
+  background: skyblue;
+
+}
+.PostsHead {
+  margin: 10px;
+  border: 1px solid;
+
+  height: 0.5%;
+  width: 100%;
 
   background: skyblue;
 
