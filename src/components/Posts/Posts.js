@@ -15,15 +15,16 @@ export default function Posts () {
     useEffect(() => {
 
         postService.getPosts().then(({data}) =>
-            dispatch(postActions.getAllPosts(data)));
 
-    }, [])
+
+            dispatch(postActions.getAllPosts(data)));}
+        ,[])
 
 
     return (<div className = 'Users'>
-            {
-                posts.map(post => <Post key = {post.id} post={post}/>)
-            }
+
+            {posts.map(post => <Post key = {post.id} post={post}/>)}
+
         </div>
     );
 };

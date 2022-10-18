@@ -5,9 +5,7 @@ let postSlice = createSlice({
 
     initialState: {
         posts: [],
-        onePost: null,
-        loading: false,
-        error: null
+        onePost: null
     },
 
     reducers: {
@@ -20,7 +18,11 @@ let postSlice = createSlice({
     }
 });
 
-let {reducer: postReducer, actions:{getAllPosts, setOnePost}} = postSlice;
+let {reducer: postReducer, actions:{
+    getAllPosts,
+    setOnePost}} = postSlice;
+
+
 
 let postActions = {
     getAllPosts,

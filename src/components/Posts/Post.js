@@ -5,14 +5,14 @@ import {postActions} from "../../redux";
 export default function Post ({post}) {
 
     let dispatch = useDispatch();
-
     return (<div className='User'>
 
-            <p>id:{post.id}</p>
-            <p>title:{post.title}</p>
+            <div>id:{post.id}</div>
+
+            <div>title:{post.title}</div>
 
             <button onClick={() => dispatch(postActions.setOnePost(post))}>
-                Set Post
+                Show Details
             </button>
 
         </div>
